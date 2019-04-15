@@ -103,9 +103,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun horizontalDeterminate(view: View) {
+        progressStatus = 0
         isStarted = !isStarted
     }
 
+    fun onclickShowDialog(view: View) {
+        val alertFragment = AlertDialogFragment()
+        alertFragment.show(fragmentManager, "alert")
+    }
+    
     // Example Notify
 
     lateinit var notificationManager : NotificationManager

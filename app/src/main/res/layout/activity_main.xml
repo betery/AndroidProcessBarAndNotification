@@ -94,11 +94,16 @@
         android:text="DETERMINATE SECONDARY PROGRESS BAR" />
 
     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog"
+        android:onClick="onclickShowDialog"/>
+	
+    <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="showNotify"
         android:text="Show Notification" />
-
 
 </LinearLayout>
